@@ -53,6 +53,10 @@ Like DQN, DDPG maintains two copies of the neural network, the "regular" network
 
 After hitting running 2686 games of Tennis (episodes), the past 100 episodes met the +0.5 score requirement to consider the enviroment solved. This means that the agent's were able to keep a volley going where each agent hit the ball four times and one hit it five times on average over the past 100 games. In the performance chart, there's a maximum score around 2.6 - this is likely the maximum score or ear maximum score before the time limit is hit (1000) and the game is reset.
 
+## Model Weights
+
+Saved Model weights can be found in the file episode-2686.pt. It's a dictonary containing the four networks (each agent's actor and critic).
+
 ## Ideas for Future Work
 
 Prioritized Replays (where "boring" experiences are dropped) would also help improve the agents and help train quicker. This especially true early on since the agent's are essentially randomly responding to their observations and slowly learning how not to hit the ball over the net (or miss it entirely). The first few "hits" will be very valuable, especially when comparred to the potentially hundreds of games of "misses".
